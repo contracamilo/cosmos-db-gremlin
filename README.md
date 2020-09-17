@@ -90,9 +90,23 @@ You can now use the Data Explorer in the Azure portal to browse and query your n
   
 The data you entered using your app is displayed in the Graph pane. You can zoom in and out of the graph, you can expand the graph display, add additional vertices, and move vertices on the display surface.
 
-node app.js "g.V()" //Vertices - nodes
-node app.js "g.E()" //Edges - relationships
-node app.js "g.V().count()"  //Count the number of vertices/nodes or edges/relationships in the graph
+Vertices - nodes
+
+```Bash
+node app.js "g.V()"
+```
+
+Edges - relationships
+
+```Bash
+node app.js "g.E()"
+```
+
+Count the number of vertices/nodes or edges/relationships in the graph
+
+```Bash
+node app.js "g.V().count()"  
+```
 
 ### Applying filters to queries
 
@@ -171,4 +185,4 @@ Your app should display a list of results like the following example:
 {"id":"p1","label":"Product","type":"vertex","properties":{"name":[{"id":"7f10b6bb-0a8a-4cf2-b2ac-8d8e4888c007","value":"Phone Charger"}],"price":[{"id":"05184a58-d0d9-4866-9539-511389ca355c","value":15.99}]}}
 ```
 
-[Reference Doc]("https://docs.microsoft.com/en-us/learn/modules/store-access-data-cosmos-graph-api/6-exercise-query-graph-data-from-an-application-using-gremlin-api?pivots=javascript")
+[Reference Doc](https://docs.microsoft.com/en-us/learn/modules/store-access-data-cosmos-graph-api/6-exercise-query-graph-data-from-an-application-using-gremlin-api?pivots=javascript)
